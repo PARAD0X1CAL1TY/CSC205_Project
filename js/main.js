@@ -1,21 +1,14 @@
-
-/**
- * courses - an array - indicated by the opening and closing [ ]
- * 
- * Each element of the array is a JSON object. { } indicate the start and the end of an object.  In the object are name/value pairs in 
- * the format of "name": "value"  If the value is numeric, the pair can be "name": 4  (no quotes around the number)
- * 
- * This format is JSON or JAvaScript Object Notation - more info here https://www.w3schools.com/js/js_json_intro.asp
- */
+// A good portion of the code is not mine, but was taken from the example code provided.
 
 
 
-// Pop up an alert on the page after the page and all stylesheets and images have loaded
+
 window.onload = (event) => {
     let filteredData = removeColumns(courses);
     let table = document.getElementById("course-table")
     console.log(table);
     let data = Object.keys(filteredData[0]);
+    
 
     generateTableHead(table, data);
 
@@ -25,7 +18,7 @@ window.onload = (event) => {
     
 
     let filterTable = removeColumns(courses);
-    colorTableRows(); // Not working
+    colorTableRows(); // Not working, but left in anyways.
 
 
     function generateTableHead(table, data) {
@@ -59,6 +52,7 @@ window.onload = (event) => {
     
             // Create a new row in the tbody
             let row = tbody.insertRow();
+            
     
             // Loop through the data for the row
             for (key in courses) {
@@ -71,7 +65,6 @@ window.onload = (event) => {
     
                 // Add the text content to the cell
                 cell.appendChild(text);
-                //cell.appendChild();
             }
         }
     }
@@ -82,7 +75,8 @@ window.onload = (event) => {
     function removeColumns(courses) {
 
         courses.forEach(function (courses) {
-            delete courses.Department;
+            // Remove unneeded garbage.
+            delete courses.Department; 
             delete courses.Section;
             delete courses.Building;
             delete courses.Line;
@@ -90,13 +84,13 @@ window.onload = (event) => {
             delete courses.Number;
             delete courses.Capacity;
             delete courses.Campus;
-            delete courses.EndTime;
+           
 
             
         });
         return courses;
     }
-//Coloring not working :(
+        //Coloring not working :(
     function colorTableRows() {
 
         // Get a collection of rows from the table
@@ -140,7 +134,7 @@ window.onload = (event) => {
 
 let courses = [
     {"Line":81,"Department":"BUS","Number":344,"Section":1,"Title":"MANAGEMENT OF INFORMATION SYSTEMS","Faculty":"Richards, Gordon P.","Openings":2,"Capacity":30,"Status":"Open","Day":"MWF","Start Time":"1:25:00 PM","EndTime":"2:20 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 341 Computer Science Lab","Credits":3,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
-    ,{"Line":167,"Department":"CSC","Number":133,"Section":2,"Title":"SURVEY OF COMPUTER SCIENCE","Faculty":"Madeira, Scott","Openings":6,"Capacity":15,"Status":"Open","Day":"H","Start Time":"2:00:00 PM","EndTime":"4:50 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 341 Computer Science Lab","Credits":0,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
+    ,{"Line":167,"Department":"CSC","Number":133,"Section":2,"Title":"SURVEY OF COMPUTER SCIENCE","Faculty":"Madeira, Scott","Openings":6,"Capacity":15,"Status":"Open","Day":"TH","Start Time":"2:00:00 PM","EndTime":"4:50 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 341 Computer Science Lab","Credits":0,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
     ,{"Line":168,"Department":"CSC","Number":133,"Section":3,"Title":"SURVEY OF COMPUTER SCIENCE","Faculty":"Madeira, Scott","Openings":7,"Capacity":15,"Status":"Open","Day":"T","Start Time":"6:30:00 PM","EndTime":"9:20 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 341 Computer Science Lab","Credits":0,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
     ,{"Line":169,"Department":"CSC","Number":133,"Section":"0A","Title":"SURVEY OF COMPUTER SCIENCE","Faculty":"Richards, Gordon P.","Openings":15,"Capacity":45,"Status":"Open","Day":"TH","Start Time":"8:00:00 AM","EndTime":"9:20 AM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 110 Chemistry room","Credits":4,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
     ,{"Line":170,"Department":"CSC","Number":190,"Section":1,"Title":"HTML","Faculty":"Madeira, Scott","Openings":4,"Capacity":25,"Status":"Open","Day":"M","Start Time":"2:30:00 PM","EndTime":"3:25 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 312A","Credits":1,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
@@ -149,3 +143,4 @@ let courses = [
     ,{"Line":173,"Department":"CSC","Number":363,"Section":"E1","Title":"DATABASE SYSTEMS","Faculty":"Hinderliter, Jeffery A","Openings":4,"Capacity":30,"Status":"Open","Day":"T","Start Time":"6:30:00 PM","EndTime":"9:20 PM","Campus":" Main Campus","Building":" Science and Engineering","Room":" SE 233 Engineering Lab\/Classroom","Credits":3,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021\r\n"}
     ,{"Line":296,"Department":"HUM","Number":103,"Section":"0A","Title":"INVITATION TO THE HUMANTIES","Faculty":"Miller, Eric John","Openings":12,"Capacity":180,"Status":"Open","Day":"W","Start Time":"11:15:00 AM","EndTime":"12:10 PM","Campus":" Main Campus","Building":" Old Main","Room":" John White Chapel","Credits":0,"Start Date":"8\/30\/2021","End Date":"12\/17\/2021"}
 ]
+
