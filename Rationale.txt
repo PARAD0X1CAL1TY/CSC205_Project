@@ -1,0 +1,8 @@
+Hi!  Here's my rationale for the display screen/what I omitted.
+
+1. I removed the department portion and course number, as it doesn't benefit the student, and whether they will enroll in the class or not.
+2. I removed section as the student could find this out later, and it is not relevant to them personally.
+3. I removed building and room, as they are likely not important to the student, unless they had accessibility concerns.
+4. I removed the capacity, but left the availible seats.  The student only needs to know if they can enroll or not.
+5. I removed the campus key, as I expect almost all students will be attending local classes, and if they are local, it is of little consequence if they have an online or remote class.
+6. I removed the line, as I genuinely haven't ever used this, and I do not know how this benefits students.  If it was needed, I likely would have used it.
