@@ -96,7 +96,7 @@ window.onload = (event) => {
         });
         return courses;
     }
-//Coloring not working :()
+//Coloring not working :(
     function colorTableRows() {
 
         // Get a collection of rows from the table
@@ -113,12 +113,11 @@ window.onload = (event) => {
             console.log("The value of length is " + length);
             let shading = "true";
     
-            // Get the value in the last column <td> of the row and cast it to an integer
-            // switch (parseInt(row.lastChild.innerHTML)) {
+          //Attempted to work on shading the rows, so far not working.
             switch (shading) {
                 case "true":
                     shading = "false";
-                    rows[i].className = 'table-dark'
+                    rows[i].className = 'table-warning'
                     break;
                 case "false":
                     shading = "true";
