@@ -1,3 +1,4 @@
+/////Project #1
 Hi!  Here's my rationale for the display screen/what I omitted.
 
 1. I removed the department portion and course number, as it doesn't benefit the student, and whether they will enroll in the class or not.
@@ -9,3 +10,19 @@ Hi!  Here's my rationale for the display screen/what I omitted.
 
 
 For the colors, I made it black/gold to match Geneva's colors.
+
+/////Project #2
+Hello again! Here's my explanation for how I laid out this page.
+
+1. I used a backgroud image to make the page feel a bit less "static."
+2. Making the colors close to Geneva's to fit the overall black/gold theme.  
+3. The highlight color is distinguishable enough from the other colors, but still similar.
+4. When clicked, the list items display what I believe to be the most relevant pieces of info.
+5. On each list item, the numerical/critical text is bolded to draw attention.
+6. I formatted the instructor's name to be a bit more readable.
+7. The deselected courses do NOT show their extended info, so that the user is not overloaded with information.
+8. The number of the extended info in the list items is 7 lines.  I felt more info would become confusing, and overwhelming.  Realistically, the user needs the name of the course, the time slot, the section, and the code to sign up for it.  
+9. I wanted to eliminate confusion on the lab courses, so for all lab courses I removed the "0 credit" section, and replaced it with "Lab Portion."
+
+I put a lot of work into this one.  Feel free to add/remove a line from the JSON, my code should fully function dynamically :)
+
