@@ -1,13 +1,18 @@
 # CSC205_Project
-Ian Milliron's Submission for Project 1
+Ian Milliron's Submission for Project 1 and 2.
 
 /////
-Using code from the example project, as well as some code from bootstrap.
+UPDATES:
+index.html and main.js are Project #1.
+index2.html and main2.js are Project #2.
 
-The modified files are main.js and index.html, in addition README.md and Rationale.txt have been added to explain the direction of the project.
+/////
+Code comments:
+Project 2 is fully dynamic.  This was a pain, but is actually decish-ish code.
+The background imag is my own image, I do a tiny bit of graphic design.  
 
-///
-Things I wish could have been differently:
-1. Struggled to resize the table.
-2. Wanted shading per row.
+/////
+
+
+
 
