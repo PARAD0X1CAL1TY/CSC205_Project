@@ -26,3 +26,17 @@ Hello again! Here's my explanation for how I laid out this page.
 
 I put a lot of work into this one.  Feel free to add/remove a line from the JSON, my code should fully function dynamically :)
 
+/////Project #3
+Hi ya!
+Yeah, so the stupidly long line for more info is back...with FRIENDS!  I built a lot of this on my previous project, and made the code more robust and pretty..? Can't really say that....
+
+Here's the fun things!
+1. Added GIFs to the project for that pizza! factor.  Was gonna add a nice little easter egg, but can't brain think now.  Spent most of the weekend, not that I dislike it.  
+2. Searches do not fetch from the server EVERY time the user types, in fact, data is pulled once and stored in the "courses" variable.
+3. You can remove full courses with a button press.
+4. Emailing professors works, and if I had more time, I'd have made the email formatted such that the ser could press send and the professor would have a prewritten eamil sent to them.
+I had a lot of fun with this.  It was more difficult than expected, but I enjoyed it, would add some more details if I had time to work on it tomorrow.  
+
+Thanks for teaching! 
+
+~Ian
